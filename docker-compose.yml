@@ -2,7 +2,6 @@ services:
 
   frontend:
     build: ./nadsoft-frontend
-    container_name: nadsoft-frontend
     ports:
       - "3000:3000"
     depends_on:
@@ -10,7 +9,6 @@ services:
 
   backend:
     build: ./nadsoft-backend
-    container_name: nadsoft-backend
     ports:
       - "5000:5000"
     depends_on:
@@ -23,7 +21,6 @@ services:
 
   mysql:
     image: mysql:8
-    container_name: nadsoft-mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: admin
