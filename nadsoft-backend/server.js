@@ -13,5 +13,5 @@ app.use(express.json());
 app.use("/students", studentRoutes);
 
 app.listen(PORT,()=>{
- console.log(`Server running on port ${PORT}`);
+ console.log(`Server live on port ${PORT}`);
 });
