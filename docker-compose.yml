@@ -1,14 +1,14 @@
 services:
 
   frontend:
-    build: ./nadsoft-frontend
+    image: pranav7820/nadsoft-frontend:latest
     ports:
       - "3000:3000"
     depends_on:
       - backend
 
   backend:
-    build: ./nadsoft-backend
+    image: pranav7820/nadsoft-backend:latest
     ports:
       - "5000:5000"
     depends_on:
